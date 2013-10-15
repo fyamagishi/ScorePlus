@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+
+    <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+    <TableRow>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username" />
+      <EditText
+        android:id="@+id/txtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="すこあたろう"
+        android:imeOptions="actionDone"
+        android:inputType="text"/>
+    </TableRow>
+    <TableRow>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lastname" />
+      <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="山田"
+        android:imeOptions="actionDone"
+        android:inputType="text"/>
+    </TableRow>
+    <TableRow>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firstname" />
+      <EditText
+        android:id="@+id/txtFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="華子"
+        android:imeOptions="actionDone"
+        android:inputType="text"/>
+    </TableRow>
+
+    <TableRow>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email" />
+      <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="score@scoreplus.com"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"/>
+    </TableRow>
+<!--
+    <TableRow>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password" />
+      <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="4～10文字"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"/>
+    </TableRow>
+-->
+    <TableRow>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender" />
+      <Spinner
+        android:id="@+id/spnGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spnGender_items"
+        />
+    </TableRow>
+    <TableRow>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prefecture" />
+      <Spinner
+        android:id="@+id/spnPrefecture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spnPrefecture_items"
+        android:prompt="@string/spnPrefecture_prompt"
+        />
+    </TableRow>
+    <TableRow>
+      <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:inputType="date" />
+      <Button
+        android:id="@+id/btnDate"
+        android:onClick="onDateClick"
+        android:text="@string/birthday" />
+    </TableRow>
+
+        <ImageView
+        android:id="@+id/profileimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="ScorePlus"
+        android:scaleX="1.0"
+        android:scaleY="1.0"
+        android:src="@drawable/golfprofile"
+        />
+    <Button
+        android:id="@+id/btnImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="写真を選択"
+        android:onClick="onClick"/>
+
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/updateprofile"
+      android:onClick="onClick"/>
+  </TableLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

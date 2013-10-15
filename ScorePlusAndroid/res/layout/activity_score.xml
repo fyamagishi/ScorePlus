@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+    <TableRow>
+      <TextView
+        android:id="@+id/txtHole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="486yards" />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAR.5" />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HCP.3" />
+      </TableRow>
+    <TableRow>
+      <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@android:layout/simple_list_item_1">
+      </ListView>
+    </TableRow>
+    <TableRow>
+    <Button
+      android:id="@+id/btnLeft"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="←"
+      android:onClick="onClick"/>
+    <Button
+      android:id="@+id/btnSave"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="保存"
+      android:onClick="onClick"/>
+    <Button
+      android:id="@+id/btnRight"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="→"
+      android:onClick="onClick"/>
+    </TableRow>
+    <TableRow>
+    <Button
+      android:id="@+id/btnBack"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="戻る"
+      android:onClick="onClick"/>
+    </TableRow>
+    </TableLayout>
+</LinearLayout>

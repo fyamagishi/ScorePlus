@@ -1,0 +1,108 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<LinearLayout
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtGolfcoursename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="【ムーンレイク嶋崎】"
+        android:textSize="24sp"
+        android:textColor="#000000"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+        <TableRow>
+            <EditText
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:inputType="date"
+            android:focusable="false"/>
+            <Button
+            android:id="@+id/btnDate"
+            android:onClick="onDateClick"
+            android:text="@string/round" />
+        </TableRow>
+        <TableRow>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/firsthole" />
+            <Spinner
+            android:id="@+id/spnFirsthole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/spnCourse"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lasthole" />
+            <Spinner
+            android:id="@+id/spnLasthole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/spnCourse"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weather" />
+            <Spinner
+            android:id="@+id/spnWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/spnWeather"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tee" />
+            <Spinner
+            android:id="@+id/spnTee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/spnTee"/>
+        </TableRow>
+    <Switch android:id="@+id/switchPut"
+        android:text="@string/put"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dip"
+        android:checked="true"/>
+    <Switch android:id="@+id/switchFw"
+        android:text="@string/fairway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dip"/>
+    <Switch android:id="@+id/switchOb"
+        android:text="@string/ob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dip"/>
+    <Switch android:id="@+id/switchBk"
+        android:text="@string/bunker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dip"/>
+    <Switch android:id="@+id/switchPn"
+        android:text="@string/penalty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dip"/>
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/start"
+      android:onClick="onClick"/>
+    </TableLayout>
+</LinearLayout>
+</ScrollView>

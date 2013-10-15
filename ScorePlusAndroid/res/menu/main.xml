@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menu_top"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_top"/>
+    <item
+        android:id="@+id/menu_start"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_start"/>
+    <item
+        android:id="@+id/menu_registration"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_registration"/>
+    <item
+        android:id="@+id/menu_login"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_login"/>
+    <item
+        android:id="@+id/menu_settings"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_settings"/>
+
+</menu>

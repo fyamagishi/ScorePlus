@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical" >
+  <TextView
+    android:id="@+id/txtHole"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="" />
+  <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+    <TableRow>
+      <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="←"
+        android:onClick="onClick"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="山田華子" />
+      <Button
+        android:id="@+id/btnRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="→"
+        android:onClick="onClick"/>
+    </TableRow>
+    <TableRow>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="スコア" />
+      <EditText
+        android:id="@+id/txtScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:focusable="true"
+        android:inputType="number"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="パット" />
+      <EditText
+        android:id="@+id/txtPut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:inputType="number"/>
+    </TableRow>
+    <TableRow>
+<!--
+        <ToggleButton
+          android:textOn="Left On"
+          android:textOff="Left Off"
+          android:id="@+id/tglLeft"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+        </ToggleButton>
+-->
+        <ToggleButton
+          android:textOn="Fw On"
+          android:textOff="Fw Off"
+          android:id="@+id/tglFw"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+        </ToggleButton>
+<!--
+        <ToggleButton
+          android:textOn="Right On"
+          android:textOff="Right Off"
+          android:id="@+id/tglRignt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+        </ToggleButton>
+-->
+    </TableRow>
+    <TableRow>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OB" />
+      <EditText
+        android:id="@+id/txtOb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:inputType="number"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ペナルティ" />
+      <EditText
+        android:id="@+id/txtPenalty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:inputType="number"/>
+    </TableRow>
+    <TableRow>
+        <ToggleButton
+          android:textOn="BK On"
+          android:textOff="BK Off"
+          android:id="@+id/tglBk"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+        </ToggleButton>
+        <Button
+          android:id="@+id/btnBack"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="戻る"
+          android:onClick="onClick"/>
+      </TableRow>
+    </TableLayout>
+</LinearLayout>

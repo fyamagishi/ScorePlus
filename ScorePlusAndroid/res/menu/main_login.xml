@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menu_start"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_start"/>
+    <item
+        android:id="@+id/menu_settings"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_settings"/>
+    <item
+        android:id="@+id/menu_image"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_image"/>
+    <item
+        android:id="@+id/menu_account"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_account"/>
+</menu>

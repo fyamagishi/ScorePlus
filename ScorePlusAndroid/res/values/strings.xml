@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Score+</string>
+
+    <!-- Menu -->
+    <string name="menu_top">トップ</string>
+    <string name="menu_start">スタート</string>
+    <string name="menu_settings">設定</string>
+    <string name="menu_profile">プロフィール</string>
+    <string name="menu_account">外部アカウント連携</string>
+    <string name="menu_image">プロフィール画像</string>
+    <string name="menu_logout">ログアウト</string>
+    <string name="menu_registration">会員登録</string>
+    <string name="menu_login">ログイン</string>
+
+    <!-- Twitter -->
+    <string name="twitter_consumer_key">NTbh8p6WkQFbfALL9SPsfw</string>
+    <string name="twitter_consumer_secret">IRCPxw6JqhHRaSz9x5xqodmhrMWcUqF90osTmfw1pww</string>
+    <string name="twitter_oauth">Twitter認証</string>
+    <string name="twitter_callback_url">scoreplus://twitter</string>
+
+    <string name="app_name">Score+</string>
+    <string name="app_id">194193417407778</string>
+    <string name="login">ログイン</string>
+    <string name="username">ユーザーネーム</string>
+    <string name="or">または</string>
+    <string name="email">Eメール</string>
+    <string name="password">パスワード</string>
+    <string name="forget">パスワードを忘れた</string>
+    <string name="resend">パスワード再送</string>
+    <string name="registration">会員登録</string>
+    <string name="now">いますぐ使う</string>
+    <string name="firstname">名</string>
+    <string name="lastname">姓</string>
+    <string name="gender">性別</string>
+    <string name="prefecture">都道府県</string>
+    <string name="birthday">生年月日</string>
+    <string name="updateprofile">会員情報変更</string>
+    <string name="scoreregistration">スコア登録</string>
+    <string name="search">検索</string>
+    <string name="spnGender_prompt">性別を選択してください</string>
+    <string name="spnPrefecture_prompt">都道府県を選択してください</string>
+    <string name="btn_history">検索履歴へ</string>
+    <string name="btn_searchgolfcourse">ゴルフ場検索へ</string>
+    <string name="hint_golfcourse">ゴルファンズゴルフ倶楽部</string>
+
+    <string name="put">パッティング</string>
+    <string name="ob">OB</string>
+    <string name="penalty">ペナルティ</string>
+    <string name="fairway">フェアウェイ</string>
+    <string name="bunker">バンカー</string>
+    <string name="start">スタート</string>
+    <string name="green">グリーン</string>
+    <string name="tee">ティー</string>
+    <string name="round">ラウンド日</string>
+    <string name="firsthole">前半ホール</string>
+    <string name="lasthole">後半ホール</string>
+    <string name="weather">天気</string>
+
+    <!-- 画面内のテキスト -->
+    <string name="text_golfcoursesearch">ゴルフ場名を入力してください(一部可)</string>
+
+    <string-array name="spnGender_items">
+        <item >選択</item>
+        <item >男性</item>
+        <item >女性</item>
+    </string-array>
+    <string-array name="spnPrefecture_items">
+        <item >選択</item>
+        <item >北海道</item>
+        <item >青森</item>
+        <item >秋田</item>
+    </string-array>
+    <string-array name="golfcoursehistory">
+        <item >ムーンレイク嶋崎</item>
+        <item >荻野目ゴルフ場</item>
+        <item >大内カントリークラブ</item>
+    </string-array>
+    <string-array name="spnCourse">
+        <item >選択</item>
+        <item >IN</item>
+        <item >OUT</item>
+    </string-array>
+    <string-array name="spnWeather">
+        <item >選択</item>
+        <item >晴れ</item>
+        <item >曇り</item>
+        <item >雨</item>
+        <item >雪</item>
+    </string-array>
+    <string-array name="spnGreen">
+        <item >選択</item>
+        <item >ベント</item>
+        <item >コーライ</item>
+    </string-array>
+    <string-array name="spnTee">
+        <item >選択</item>
+        <item >レギュラー</item>
+        <item >フロント</item>
+    </string-array>
+</resources>
